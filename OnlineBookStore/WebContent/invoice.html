@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Invoice </title>
+    
+    <style>
+    .invoice-box {
+        max-width: 800px;
+
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+       line-height: initial;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="homepage.html">Online Book Store</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="user_profile.html">Profile</a></li>
+       <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="payment.html">Payment</a></li>
+       <li><a href="invoice.html">Order Confirmation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h1 style="color: green;margin-top: 91px;margin-left: 407px;
+    font-weight: 700;">Thank You, Your order has been placed!.</h1>
+
+    <div class="invoice-box" style="margin-top: 36px;height: 559px;margin-bottom: 134px;">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="https://bvrithyderabad.edu.in/wp-content/uploads/2016/12/sves-logo.png" style="width:100%;     max-width: 89px;">
+                            </td>
+                            
+                            <td>
+                                Invoice #: 123<br>
+                                Created: August 4, 2020<br>
+                                Due: September 4, 2020
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                Sparksuite, Inc.<br>
+                                12345 Sunny Road<br>
+                                Sunnyville, CA 12345
+                            </td>
+                            
+                            <td>
+                                Acme Corp.<br>
+                                Rathna Challa<br>
+                                18wh1a05a1@bvrithydeabad.edu.ins
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="heading">
+                <td>
+                    Payment Method
+                </td>
+                
+                <td>
+                    total
+                </td>
+            </tr>
+            
+            <tr class="details">
+                <td>
+                    credit card
+                </td>
+                
+                <td>
+                    1000
+                </td>
+            </tr>
+            
+            <tr class="heading">
+                <td>
+                    Item
+                </td>
+                
+                <td>
+                    Price
+                </td>
+            </tr>
+            
+            <tr class="item">
+                <td>
+                   Heart of Darkness
+                </td>
+                
+                <td>
+                    Rs.139/-
+                </td>
+            </tr>
+            
+            <tr class="item">
+                <td>
+                   Who Will Cry When You Die?
+                </td>
+                
+                <td>
+                    Rs.156/-
+                </td>
+            </tr>
+            
+            <tr class="item last">
+                <td>
+                    The Theory of Everything
+                </td>
+                
+                <td>
+                    Rs.150/-
+                </td>
+            </tr>
+            
+            <tr class="total">
+                <td></td>
+                
+                <td>
+                   Total: Rs.445/-
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
