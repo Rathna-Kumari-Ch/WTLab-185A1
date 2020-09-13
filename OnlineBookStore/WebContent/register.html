@@ -1,3 +1,183 @@
+<!-- DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+     li:hover {
+    background-color: #C8C8C8 ;
+}
+ .blue {
+    color: green;
+}
+      form {
+          padding-left: 20px;
+          padding-right: 10px;
+      }
+    .b
+{
+    margin-bottom:90px;
+}
+</style>
+</head>
+<body>
+  
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="homepage.html">Online Book Store</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Login.html">Login</a></li>
+      <li><a href="Register.html">Register</a></li>
+      <li><a href="user_profile.html">Profile</a></li>
+       <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="payment.html">Payment</a></li>
+       <li><a href="invoice.html">Order Confirmation</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<div class="container" style="border-style: outset;
+    margin-top: 77px;
+    width: 688px;">
+      <div class="row main" style="width: 607px;
+    margin-left: 17px;">
+<form name="myForm" action="login.html" method="post" onsubmit="return validateForm()">
+  
+<h2 class="title">Registration Form</h1>
+                    <hr />
+  <div class="container" style="width: 441px;">
+    
+
+    <div class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Name</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon">
+      <i class="glyphicon glyphicon-user"></i>
+      </span>
+                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Your Name" onblur="return validateForm()" >
+                </div>
+              </div>
+            </div>
+
+     <div class="form-group">
+              <label for="email" class="cols-sm-2 control-label">Email</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" ></i></span>
+                  <input type="text" class="form-control" name="email" id="email"  placeholder="Your Email" onblur="return validateForm()" / >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mobile" class="cols-sm-2 control-label required">Mobile</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone" ></i></span>
+                  <input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Your Mobile" onblur="return validateForm()" >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mobile" class="cols-sm-2 control-label required">Password</label>
+
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
+                  <input type="password" class="form-control" name="password" id="password"  placeholder="Password"/ onblur="return validateForm()" >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mobile" class="cols-sm-2 control-label required">Confirm password</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
+                  <input type="password" class="form-control" name="rePassword" id="rePassword"  placeholder="confirm password"/ onblur="return validateForm()">
+                </div>
+              </div>
+            </div>
+
+            
+
+   
+   
+     <button type="submit"  style="margin-bottom: 13px;" class="btn btn-primary btn-lg btn-block login-button">Submit</button>
+    
+  </div>
+
+  
+
+</form>
+
+
+</div>
+</div>
+
+<script type="text/javascript">
+  document.getElementById("myButton").onclick = function () {
+    location.href = "login.html";
+  };
+  
+  function validateForm() {
+	  var name1 = document.forms["myForm"]["name"].value;
+	  var email1 = document.forms["myForm"]["email"].value;
+	  var mobile1 = document.forms["myForm"]["mobile"].value;
+	  var password1 = document.forms["myForm"]["password"].value;
+	 
+	 
+	   if(name1 == "") {
+		  alert("Username must be filled out");
+		  return false;
+	  }
+	   
+	   
+	   if(email1 == "") {
+			  alert("email must be filled out");
+			  return false;
+		  }
+	   if(mobile1 == "") {
+			  alert("mobile must be filled out");
+			  return false;
+		  }
+	   
+	   if(password1 == "") {
+				  alert("password must be filled out");
+				  return false;
+			  }
+	  
+	   
+  }
+
+  
+  </script>
+
+</body>
+</html>-->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,81 +231,6 @@
 
 
 
- <!-- <div class="container" style="border-style: outset;
-    margin-top: 77px;
-    width: 688px;">
-      <div class="row main" style="width: 607px;
-    margin-left: 17px;">
-        <div class="panel-heading">
-                 <div class="panel-title text-center">
-                    <h2 class="title">Registration Form</h1>
-                    <hr />
-                  </div>
-              </div> 
-        <div class="main-login main-center">
-          <form  method="post" action="catalog.html">
-            
-            <div class="form-group">
-              <label for="name" class="cols-sm-2 control-label">Name</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon">
-      <i class="glyphicon glyphicon-user"></i>
-      </span>
-                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Your Name" required>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email" class="cols-sm-2 control-label">Email</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" ></i></span>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Your Email"/ required>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="mobile" class="cols-sm-2 control-label required">Mobile</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone" ></i></span>
-                  <input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Your Mobile" required>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="mobile" class="cols-sm-2 control-label required">Password</label>
-
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
-                  <input type="password" class="form-control" name="mobile" id="mobile"  placeholder="Password"/ required>
-                  <input type="password" placeholder="Enter Password" name="password" required>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="mobile" class="cols-sm-2 control-label required">Confirm password</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
-                  <input type="password" class="form-control" name="mobile" id="mobile"  placeholder="confirm password"/ required>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group ">
-              <button type="button" onClick="location.href='login.html'" class="btn btn-primary btn-lg btn-block login-button">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>-->
 
 
 <div class="container" style="border-style: outset;
@@ -133,7 +238,7 @@
     width: 688px;">
       <div class="row main" style="width: 607px;
     margin-left: 17px;">
-<form action="login.html" method="post">
+<form onsubmit="return validate()" action="login.html" method="post">
   
 <h2 class="title">Registration Form</h1>
                     <hr />
@@ -143,7 +248,7 @@
     <div class="form-group">
               <label for="name" class="cols-sm-2 control-label">Name</label>
               <div class="cols-sm-10">
-                <div class="input-group">
+                <div class="input-group" id="nameg">
                   <span class="input-group-addon">
       <i class="glyphicon glyphicon-user"></i>
       </span>
@@ -155,7 +260,7 @@
      <div class="form-group">
               <label for="email" class="cols-sm-2 control-label">Email</label>
               <div class="cols-sm-10">
-                <div class="input-group">
+                <div class="input-group" id="emailg">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" ></i></span>
                   <input type="text" class="form-control" name="email" id="email"  placeholder="Your Email"/ >
                 </div>
@@ -165,9 +270,9 @@
             <div class="form-group">
               <label for="mobile" class="cols-sm-2 control-label required">Mobile</label>
               <div class="cols-sm-10">
-                <div class="input-group">
+                <div class="input-group" id="mobileg">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-phone" ></i></span>
-                  <input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Your Mobile" >
+                  <input type="mobile" class="form-control" name="mobile" id="mobile"  placeholder="Your Mobile" >
                 </div>
               </div>
             </div>
@@ -176,9 +281,9 @@
               <label for="mobile" class="cols-sm-2 control-label required">Password</label>
 
               <div class="cols-sm-10">
-                <div class="input-group">
+                <div class="input-group" id="passwordg">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
-                  <input type="password" class="form-control" name="mobile" id="mobile"  placeholder="Password"/ >
+                  <input type="password" class="form-control" name="password" id="password"  placeholder="Password"/ >
                 </div>
               </div>
             </div>
@@ -186,9 +291,9 @@
             <div class="form-group">
               <label for="mobile" class="cols-sm-2 control-label required">Confirm password</label>
               <div class="cols-sm-10">
-                <div class="input-group">
+                <div class="input-group" >
                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock" ></i></span>
-                  <input type="password" class="form-control" name="mobile" id="mobile"  placeholder="confirm password"/ >
+                  <input type="password" class="form-control" name="cpassword" id="cpassword" onblur=" return confirm()" placeholder="confirm password"/ >
                 </div>
               </div>
             </div>
@@ -213,6 +318,95 @@
   document.getElementById("myButton").onclick = function () {
     location.href = "login.html";
   };-->
+
+  <script type="text/javascript">
+    function validate(){
+      var name1 = document.getElementById("name").value.trim();
+      var email1 = document.getElementById("email").value.trim();
+      var mobile1 = document.getElementById("mobile").value.trim();
+      var password1 = document.getElementById("password").value.trim();
+      var conpassword = document.getElementById("cpassword").value.trim();
+     // var formal = document.getElementById("forma");
+      if(name1 == ""){
+        alert("name cannot be empty!!");
+        nameg.style.border = "solid 1px red";
+        return false;
+      }
+       else if(name1.length<4 || name1.length>12){
+        nameg.style.border = "solid 1px red";
+        alert("Name must be between 4-12 characters!!");
+
+        return false;
+      }
+    //  else if(name1 != "" && name1.length>4 && name1.length<12){
+    //    nameg.style.border = "solid 1px green";
+    //  }
+      else if(email1 == ""){
+        alert("email cannot be empty!!");
+        emailg.style.border = "solid 1px red";
+        return false;
+      }
+      var regx = /^([a-z 0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+      if(!(regx.test(email1))){
+        alert("email is not valid");
+        return false;
+      }
+
+      else if(mobile1 == ""){
+        alert("mobile cannot be empty!!");
+        mobileg.style.border = "solid 1px red";
+        return false;
+      }
+
+      var mob = /^[7-9][0-9]{9}$/;
+      if(!(mob.test(mobile1))){
+        alert("mobile no is not valid!!");
+        return false;
+      }
+
+      else if(mobile1.length<10 || mobile1.length>10){
+        alert("Invalid mobile number!!");
+        mobileg.style.border = "solid 1px red";
+        return false;
+      }
+      else if(password1 == ""){
+        alert("password cannot be empty!!");
+        passwordg.style.border = "solid 1px red";
+        return false;
+      }
+      else if(password1.length<8 || password1.length>12){
+        alert("password must be 8-12 characters!!");
+        forma.style.border = "solid 1px red";
+        return false;
+      }
+
+  
+     
+
+      else{
+        true;
+      }
+    }
+
+    function confirm(){
+      var conpassword = document.getElementById("cpassword").value.trim();
+       var password1 = document.getElementById("password").value.trim();
+      if(password1 != conpassword){
+      alert("password and confirm password are not match!!");
+      return false;
+    }
+    else{
+      true;
+    }
+    }
+    
+
+//$(document).ready(function () {
+ //   $("#txtConfirmPassword").keyup(isPasswordMatch);
+//});
+
+
+  </script>
 
 </body>
 </html>
