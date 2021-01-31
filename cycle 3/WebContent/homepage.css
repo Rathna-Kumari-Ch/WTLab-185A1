@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+h1{
+	color:blue;
+	margin-top: 113px;
+	margin-left: 454px;
+}
+
+/*.navbar-fixed-top {
+	top: 24px;
+    border-width: 0 0 1px;
+    
+}*/
+
+bg-dark {
+    background-color: #222222!important;
+}

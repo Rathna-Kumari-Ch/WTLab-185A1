@@ -135,16 +135,16 @@
 </nav>
 
 
-<form name ="myForm" onsubmit="return validate()" action="catalog.html" method="post"  >
+<form name ="myForm" onsubmit="return validate()" action="homepage.html" method="post"  >
   <div class="imgcontainer">
     <img src="https://exactax.com/track/img/hr.png" alt="Avatar" class="avatar">
   </div>
 
-  <div class="container" style="width: 441px;">
-    <label for="username"><b>Username</b></label>
+  <div class="container" style="width: 441px;margin-top: 31px;">
+    <label for="username"><b>Username</br></label>
     <input type="text" placeholder="Enter Username" name="username" id="username" >
 
-    <label for="password"><b>Password</b></label>
+    <label for="password"><b>Password</br></label>
     <input type="password" placeholder="Enter Password" name="password" id="password">
         
     <button type="submit" style="margin-left: 100px;    width: 50%;">Login</button>
@@ -177,7 +177,30 @@
       password.style.border = "solid 1px red";
       return false;
     }
-    else if(y.length<8 || y.length>10){
+    else{
+      true;
+    }
+    
+    
+    
+  }
+  
+  <!--  consider this we have any errors after validating 
+  
+  function validate() {
+	    var x = document.getElementById("username").value.trim();
+	    var y = document.getElementById("password").value.trim();
+    if(x == "" ){
+      alert("username  must be filled out!!");
+      username.style.border = "solid 1px red";
+      return false;
+    }
+    else if( y == ""){
+      alert(" password must be filled out!!");
+      password.style.border = "solid 1px red";
+      return false;
+    }
+    else if(y.length<9 || y.length>10){
       alert("password should be 8-10  characters!!");
       password.style.border = "solid 1px red";
       return false;
@@ -190,10 +213,10 @@
     else{
       true;
     }
-    
-    
-    
-  }
+    -->
+  
+  
+  
   
 </script>
 </body>
