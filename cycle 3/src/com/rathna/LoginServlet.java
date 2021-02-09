@@ -47,8 +47,9 @@ public class LoginServlet extends HttpServlet {
 			 RequestDispatcher rd = request.getRequestDispatcher("homepage.html");
 		//request.getRequestDispatcher("homepage.html").forward(request,response);  
 		//out.println(request.getAttribute("username"));
-			 
+			// out.println("<html><body bgcolor='red'>");
 			 out.println("Hi,"+username);
+			// out.println("</body></html>");
 		 rd.include(request, response); 
 		}
 		else {
